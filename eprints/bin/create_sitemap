@@ -1,4 +1,4 @@
-#!/eprints/perl/bin/perl
+#!/usr/bin/perl
 ###############################################################################
 #
 # Create a sitemap for an archive according to the Sitemap protocol. See
@@ -82,7 +82,8 @@ Explain in detail what is going on. May be repeated for greater effect.
 use strict;
 use warnings;
 
-use lib '/opt/eprints3/perl_lib';
+use FindBin;
+use lib "$FindBin::Bin/../../../perl_lib";
 
 use Compress::Zlib;
 use Getopt::Long;
